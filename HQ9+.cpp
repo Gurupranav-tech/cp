@@ -11,4 +11,14 @@ using u64 = uint64_t;
 int main(void) {
 	ios::sync_with_stdio(false);
 	cin.tie(0);
+
+  string line;
+  cin >> line;
+  for (char c : line) {
+    if (c == 'H' || c == 'Q' || c== '9') {
+       cout << "YES\n";
+       return 0;
+    }
+  }
+  cout << "NO\n";
 }

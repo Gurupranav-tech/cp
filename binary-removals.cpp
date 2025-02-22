@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+using ll = long long;
+using u8 = uint8_t;
+using u16 = uint16_t;
+using u32 = uint32_t;
+using u64 = uint64_t;
+#define vec vector
+
+int main(void) {
+  ios::sync_with_stdio(false);
+  cin.tie(0);
+
+  int t;
+  cin >> t;
+  while (t--) {
+    string s;
+    cin >> s;
+    int i = s.find("11");
+    int j = s.rfind("00");
+    cout << (i != -1 && j != -1 && i < j ? "NO" : "YES") << endl;
+  }
+}

@@ -11,4 +11,16 @@ using u64 = uint64_t;
 int main(void) {
 	ios::sync_with_stdio(false);
 	cin.tie(0);
+
+  int t;
+  cin >> t;
+  while (t--) {
+    int n; cin >> n;
+ 		ll s = 0;
+ 		for(int i = 0; i < n; i++){
+ 			ll x; cin >> x;
+ 			s += x;
+ 		}
+ 		cout << abs(s) << endl;
+  }
 }

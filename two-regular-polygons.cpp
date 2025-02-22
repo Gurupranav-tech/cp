@@ -9,6 +9,14 @@ using u64 = uint64_t;
 #define vec vector
 
 int main(void) {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
+  ios::sync_with_stdio(false);
+  cin.tie(0);
+
+  int t;
+  cin >> t;
+  while (t--) {
+    int n, m;
+    cin >> n >> m;
+    cout << (n % m == 0 ? "YES" : "NO") << endl;
+  }
 }
